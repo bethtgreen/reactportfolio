@@ -1,63 +1,109 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
 function Portfolio() {
   return (
-    <div>
-      <Hero backgroundImage="https://i.imgur.com/qkdpN.jpg">
-        <h1></h1>
-        <h2>They're the Good Boys and Girls</h2>
-      </Hero>
-      <Container style={{ marginTop: 30 }}>
-        <Row>
-          <Col size="md-12">
-            <h1>Welcome To Pupster!</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-12">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
-              consequat mauris ullamcorper eu. Orci varius natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Pellentesque et dui id justo finibus
-              sollicitudin at et metus. Ut feugiat tellus nec metus commodo, sed suscipit nisi
-              gravida. Duis eget vestibulum quam, ut porttitor sem. Donec sagittis mi sollicitudin
-              turpis semper, et interdum risus lobortis. Vestibulum suscipit nunc non egestas
-              tristique. Proin hendrerit efficitur malesuada. Mauris lorem urna, sodales accumsan
-              quam non, tristique tempor erat. Nullam non sem facilisis, tempus tortor sit amet,
-              volutpat nisl. Ut et turpis non nunc maximus mollis a vitae tortor. Pellentesque
-              mattis risus ac quam laoreet cursus. Praesent suscipit orci neque, vestibulum
-              tincidunt augue tincidunt non. Duis consequat mattis tortor vitae mattis.
-            </p>
-            <p>
-              Phasellus at rutrum nisl. Praesent sed massa ut ipsum bibendum porttitor. Sed
-              malesuada molestie velit ac viverra. Quisque a ullamcorper purus. Curabitur luctus mi
-              ac mi hendrerit semper. Nulla tincidunt accumsan lobortis. Mauris convallis sapien non
-              nibh porta accumsan. Nunc volutpat tempus porttitor. Nunc congue dictum egestas.
-              Aliquam blandit mi eu urna scelerisque, vitae volutpat ligula ultricies. Maecenas vel
-              porta augue. Fusce mauris ex, dignissim et lacinia ut, tempus eget nibh.
-            </p>
-            <p>
-              Etiam ut massa efficitur, gravida sapien non, condimentum sapien. Suspendisse massa
-              tortor, facilisis in neque sit amet, scelerisque elementum tortor. Nullam eget nibh
-              sit amet odio lobortis ullamcorper. Nulla bibendum magna nec sem pulvinar lobortis.
-              Mauris et imperdiet urna, vitae lobortis dui. Nunc elementum elit mi, non mattis enim
-              congue at. Proin mi lectus, ullamcorper id hendrerit eu, ultricies vitae lacus. Nunc
-              vehicula, erat eget laoreet condimentum, felis ante malesuada leo, nec efficitur diam
-              nisi eget nisi. Cras arcu lacus, tristique in bibendum vitae, elementum eget lorem.
-              Maecenas vestibulum volutpat orci eu pharetra. Praesent vel blandit ante, nec faucibus
-              libero. Sed ultrices lorem ex, eu facilisis libero convallis ac. Vivamus id dapibus
-              eros. Nullam tempor sem rhoncus porta semper. Proin bibendum vulputate nisl, fringilla
-              interdum elit pulvinar eu. Quisque vitae quam dapibus, vestibulum mauris quis, laoreet
-              massa.
-            </p>
-          </Col>
-        </Row>
-      </Container>
+    <>
+<Row>
+    <Col size= "s6">
+      <div className="card">
+        <div className="card-image">
+          <img alt="" src="./assets/img/beachinit.png"/>
+          <span className="card-title black">Project One</span>
+        <div className="card-content">
+          <p>This is the first project I completed alongside my team in the UCF Coding Bootcamp. This is an interactive application that helps you locate a beach near you, as well as some other activities, restaurants, and hotels nearby.</p>
+        </div>
+        <div className="card-action">
+          <a href="https://anthonyloredo5.github.io/Beachin-It/index.html">Github Application Link</a>
+        </div>
+      </div>
     </div>
+  </Col>
+</Row>
+{/* will render this once I figure out how to do it  */}
+  {/* <div className="row">
+    <div className="col s6">
+      <div className="card">
+        <div className="card-image">
+          <img src="./assets/whatstheweather.png">
+          <span className="card-title grey">What's the Weather</span>
+        </div>
+        <div className="card-content">
+          <p>This is a weather application where you can input what city you would like to know the weather of. There will be a 5 day weather forecast below and a in the current forecast there is the temp, wind speed, humidity percentage, and uv index.</p>
+        </div>
+        <div className="card-action">
+          <a href="https://bethtgreen.github.io/WeatherApp/">Github Repo Link</a>
+        </div>
+        <!-- repo links -->
+    </div>
+  </div>
+  <div className="row">
+    <div className="col s6">
+      <div className="card">
+        <div className="card-image">
+          <img src="./assets/planyourday.png">
+          <span className="card-title green">Plan Your Day</span>
+        </div>
+        <div className="card-content">
+          <p>This is a day planner for a normal work day. The user can input his/her/their hopes of what they would like to accomplish in any timeblock they choose. The planner will let you record and save events at each hour of the day. </p>
+        </div>
+        <div className="card-action">
+          <a href="https://bethtgreen.github.io/PlanyourDay/">Github Repo Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="row">
+  <div className="col s6">
+    <div className="card">
+      <div className="card-image">
+        <img src="./assets/teamgen.png">
+        <span className="card-title black">Team Generator</span>
+      </div>
+      <div className="card-content">
+        <p>This is a team generating application utilizing node.js. You can input different members of your team into the terminal to add them to your lineup.</p>
+      </div>
+      <div className="card-action">
+        <a href="https://github.com/bethtgreen/OOP-TeamGen">Github Repo Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="row">
+  <div className="col s6">
+    <div className="card">
+      <div className="card-image">
+        <img src="./assets/buildadate.png">
+        <span className="card-title red">Build-A-Date</span>
+      </div>
+      <div className="card-content">
+        <p>This is a date building application that utilizes databases and api's to allow the user to have a great date building experience.</p>
+      </div>
+      <div className="card-action">
+        <a href="https://github.com/bethtgreen/build-a-date">Github Repo Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="row">
+  <div className="col s6">
+    <div className="card">
+      <div className="card-image">
+        <img src="./assets/fitnesstracker.png">
+        <span className="card-title grey">Fitness Tracker</span>
+      </div>
+      <div className="card-content">
+        <p>This is a workout tracking application that utilizes MongoDB, Heroku, Mongoose and more. You can input either a cardio or resistance workout.</p>
+      </div>
+      <div className="card-action">
+        <a href="https://agile-fortress-35821.herokuapp.com/ ">Heroku Link</a>
+      </div>
+    </div>
+  </div>
+</div> */}
+</>
   );
 }
 
